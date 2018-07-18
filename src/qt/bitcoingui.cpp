@@ -71,7 +71,8 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     prevBlocks(0),
     spinnerFrame(0)
 {
-    GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
+    setFixedSize(1350, 800);
+    qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg2);font-family:'Open Sans,sans-serif'; }");
 
     QString windowTitle = tr("Pesetacoin Core") + " - ";
 #ifdef ENABLE_WALLET
@@ -169,7 +170,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     frameBlocks->setContentsMargins(0,0,0,0);
     frameBlocks->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
-    frameBlocksLayout->setContentsMargins(3,0,3,0);
+    frameBlocksLayout->setContentsMargins(0,0,0,0);
     frameBlocksLayout->setSpacing(3);
     labelEncryptionIcon = new QLabel();
     labelConnectionsIcon = new QLabel();
@@ -195,7 +196,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     QString curStyle = QApplication::style()->metaObject()->className();
     if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
-        progressBar->setStyleSheet("QProgressBar { background-color: #e8e8e8; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
+        progressBar->setStyleSheet("QProgressBar { background-color: #e8e8e8; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
     }
 
     statusBar()->addWidget(progressBarLabel);
