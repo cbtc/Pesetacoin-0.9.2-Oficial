@@ -71,8 +71,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     prevBlocks(0),
     spinnerFrame(0)
 {
-    setFixedSize(1350, 800);
-    qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg);font-family:'Open Sans,sans-serif'; } QToolBar QToolButton { color: white} ");
+     qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg);font-family:'Open Sans,sans-serif'; } #frame { } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background:rgb(31,31,31);border:none; } #toolbar2 { border:none;width:10px; background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(0,0,0), stop: 1 rgb(0,0,0)); } #toolbar { border:none;height:100%;padding-top:20px; background: rgb(0,0,0); text-align: left; color: white;min-width:200px;max-width:200px;} QToolBar QToolButton:hover {background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(97,97,97), stop: 1 rgb(97,97,97),stop: 2 rgb(97,97,97));} QToolBar QToolButton { font-family:Century Gothic;padding-left:20px;padding-right:100px;padding-top:10px;padding-bottom:10px; width:100%; color: white; text-align: left; background-color: rgb(31,31,31) }");
 
     QString windowTitle = tr("Pesetacoin Core") + " - ";
 #ifdef ENABLE_WALLET
