@@ -64,6 +64,7 @@ Compilación con entorno gráfico:
 Es necesario tener las librerias anteriormente mencionadas instaladas.
 
 Ejecutar:
+
 	./autogen.sh
 	./configure --with-incompatible-bdb --with-gui=qt4
 	make -j 4
