@@ -40,26 +40,33 @@ Compilación sin entorno gráfico:
 Instalar dependencias, clonar repositorio y compilar: 
 
 	sudo apt-get update
-	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev libminiupnpc-dev git libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb++-dev
+	sudo apt-get install autoconf
+	sudo apt-get install software-properties-common
+	sudo add-apt-repository ppa:bitcoin/bitcoin y enter
+	sudo apt-get update
+	sudo apt-get install libdb5.3-dev libdb5.3++-dev
+	sudo apt-get install libboost-all-dev
+	sudo apt-get install libssl-dev
+	sudo apt-get install libprotobuf-dev
+	sudo apt install protobuf-compiler
+	sudo apt-get install libqt4-dev
 	git clone https://github.com/FundacionPesetacoin/Pesetacoin-0.9.2-Oficial.git
 	cd Pesetacoin-0.9.2-Oficial/
 	./autogen.sh
 	./configure --with-incompatible-bdb
-	make
-	make install
-	make-qt4 -makefile -Wall USE_QRCODE=1
-	make 
+	make -j 4
  
 	
 
 Compilación con entorno gráfico:
 ----------------------------------
 
-ejecutar:
- 
-	qmake-qt4 -makefile -Wall USE_QRCODE=1
-	make 
+Es necesario tener las librerias anteriormente mencionadas instaladas.
 
+Ejecutar:
+	./autogen.sh
+	./configure --with-incompatible-bdb --with-gui=qt4
+	make -j 4
 
 
 License
