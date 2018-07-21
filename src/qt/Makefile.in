@@ -256,7 +256,7 @@ am__libbitcoinqt_a_SOURCES_DIST = bitcoin.cpp \
 	res/icons/remove.png res/icons/send.png res/icons/synced.png \
 	res/icons/toolbar.png res/icons/toolbar_testnet.png \
 	res/icons/transaction0.png res/icons/transaction2.png \
-	res/icons/transaction_conflicted.png res/icons/tx_inout.png \
+	res/icons/transaction_conflicted.png res/icons/tx_input.png \
 	res/icons/tx_input.png res/icons/tx_output.png \
 	res/icons/tx_mined.png res/images/about.png \
 	res/images/splash.png res/images/splash_testnet.png \

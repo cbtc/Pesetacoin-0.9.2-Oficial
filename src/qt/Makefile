@@ -256,7 +256,7 @@ am__libbitcoinqt_a_SOURCES_DIST = bitcoin.cpp \
 	res/icons/remove.png res/icons/send.png res/icons/synced.png \
 	res/icons/toolbar.png res/icons/toolbar_testnet.png \
 	res/icons/transaction0.png res/icons/transaction2.png \
-	res/icons/transaction_conflicted.png res/icons/tx_inout.png \
+	res/icons/transaction_conflicted.png res/icons/tx_input.png \
 	res/icons/tx_input.png res/icons/tx_output.png \
 	res/icons/tx_mined.png res/images/about.png \
 	res/images/splash.png res/images/splash_testnet.png \
@@ -527,14 +527,14 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/missing automake-1.15
-AWK = gawk
+AUTOCONF = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/missing automake-1.15
+AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx
 BOOST_CHRONO_LIB = -lboost_chrono 
@@ -590,7 +590,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-JAVA = /usr/bin/java
+JAVA = 
 JAVA_COMPARISON_TOOL = 
 LCOV = 
 LDFLAGS =   -Wl,-z,relro -Wl,-z,now -pie
@@ -605,7 +605,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -665,10 +665,10 @@ VERSION = 0.9.2
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/qt
-abs_srcdir = /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/qt
-abs_top_builddir = /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2
-abs_top_srcdir = /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2
+abs_builddir = /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/qt
+abs_srcdir = /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/qt
+abs_top_builddir = /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial
+abs_top_srcdir = /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -699,7 +699,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /mnt/e08bbf2a-a458-4abd-9a74-8946934fec32/wallets/V2PTC/Pesetacoin-0.9.2/src/build-aux/install-sh
+install_sh = ${SHELL} /home/carlos/Desktop/Pesetacoin-0.9.2-Oficial/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
