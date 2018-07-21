@@ -16,12 +16,12 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
+  <property name="lineWidth">
+   <number>0</number>
+  </property>
   <widget class="QFrame" name="SendCoins">
    <property name="toolTip">
     <string>This is a normal payment.</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
    </property>
    <property name="frameShadow">
     <enum>QFrame::Sunken</enum>
@@ -64,7 +64,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bitcoin.qrc">
+         <iconset resource="../pesetacoin.qrc">
           <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
         </property>
         <property name="shortcut">
@@ -81,7 +81,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bitcoin.qrc">
+         <iconset resource="../pesetacoin.qrc">
           <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
         </property>
         <property name="shortcut">
@@ -98,7 +98,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bitcoin.qrc">
+         <iconset resource="../pesetacoin.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -585,9 +585,6 @@
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
    <property name="frameShadow">
     <enum>QFrame::Sunken</enum>
    </property>
@@ -622,7 +619,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bitcoin.qrc">
+         <iconset resource="../pesetacoin.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1117,9 +1114,6 @@
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
    <property name="frameShadow">
     <enum>QFrame::Sunken</enum>
    </property>
@@ -1158,7 +1152,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bitcoin.qrc">
+         <iconset resource="../pesetacoin.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1230,7 +1224,7 @@
   <tabstop>deleteButton_s</tabstop>
  </tabstops>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../pesetacoin.qrc"/>
  </resources>
  <connections/>
 </ui>
