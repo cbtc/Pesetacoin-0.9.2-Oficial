@@ -10,6 +10,9 @@
     <height>400</height>
    </rect>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #ffffff</string>
+  </property>
   <property name="windowTitle">
    <string>Send Coins</string>
   </property>
